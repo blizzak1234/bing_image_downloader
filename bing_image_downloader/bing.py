@@ -46,7 +46,7 @@ class Bing:
             path = urllib.parse.urlsplit(link).path
             filename = posixpath.basename(path).split('?')[0]
             file_type = filename.split(".")[-1]
-            if file_type.lower() not in ["jpe", "jpeg", "jfif", "exif", "tiff", "gif", "bmp", "png", "webp", "jpg"]:
+            if file_type.lower() not in ["jpg"]:
                 file_type = "jpg"
 
             # Download the image
